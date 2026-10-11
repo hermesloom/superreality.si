@@ -117,6 +117,18 @@ p { margin: 0; }
   letter-spacing: 0.06em;
   color: var(--muted);
 }
+.topbar a {
+  color: var(--ink);
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+.topbar a:hover,
+.topbar a:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+  outline: none;
+}
 
 .wordmark {
   margin: clamp(0.75rem, 3vh, 2.5rem) 0 0;
@@ -127,6 +139,7 @@ p { margin: 0; }
   width: 100%;
   height: auto;
   overflow: visible;
+  pointer-events: none;
 }
 .wordmark text {
   font-family: var(--font);
@@ -276,6 +289,7 @@ main {
   width: 100%;
   height: auto;
   overflow: visible;
+  pointer-events: none;
 }
 .final text {
   font-family: var(--font);
