@@ -1,6 +1,6 @@
 # BOOTSTRAP — A Manifesto for the Free Human
 
-Single-page website for the manifesto. Static HTML and CSS, no build step, no JavaScript.
+Single-page website for the manifesto. Static HTML and CSS, no build step. The only script is the Vercel Web Analytics snippet.
 
 ```
 index.html     the page
@@ -22,4 +22,6 @@ then open http://localhost:8000.
 
 ## Deploy
 
-Any static host works. With the Vercel CLI: `vercel` for a preview, `vercel --prod` for production.
+Built for Vercel. With the Vercel CLI: `vercel` for a preview, `vercel --prod` for production.
+
+Analytics: the page loads `/_vercel/insights/script.js`, which Vercel serves once **Web Analytics** is enabled for the project (Vercel dashboard → project → Analytics → Enable). On any other host the request 404s harmlessly.

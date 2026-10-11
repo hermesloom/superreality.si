@@ -24,7 +24,7 @@ Publish the manifesto "BOOTSTRAP — Manifest für den freien Menschen" (written
 
 ## Architecture
 
-Static files only, no build step, no JavaScript required for reading:
+Static files only, no build step, no JavaScript required for reading (the only script is the cookieless Vercel Web Analytics snippet, added 2026-10-11):
 
 ```
 index.html            the page (semantic: header / main > article > section × 10)
