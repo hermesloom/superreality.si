@@ -276,6 +276,8 @@ main {
   color: var(--muted);
 }
 
+.nw { white-space: nowrap; }
+
 .s-final {
   padding-bottom: clamp(5rem, 14vh, 9rem);
 }

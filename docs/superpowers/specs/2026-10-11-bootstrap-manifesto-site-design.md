@@ -12,13 +12,14 @@ Publish the manifesto "BOOTSTRAP — Manifest für den freien Menschen" (written
 - The full text is translated into English by hand, preserving the author's line breaks, section breaks, and emphasis (bold = assertion, italic = aside).
 - Title: "BOOTSTRAP". Subtitle: "A Manifesto for the Free Human" (for "Manifest für den freien Menschen").
 - The "Sie sagen / Wir sagen" refrain is typeset as a dialogue with hanging labels ("They say" / "We say"), which mirrors the source's bold-vs-regular contrast.
-- No author byline (the text speaks as "we").
+- Section 08 ("the mirror") was written in English directly, at the author's request on 2026-10-11, and is not part of the German master document: the many reflect whoever is looked up to, so the climate changes when the powerful and the confident live by the manifesto. Its "They say" litany borrows Zarathustra's vocabulary for the crowd.
+- Byline "by @sigalor" in the top bar; otherwise the text speaks as "we".
 
 ## Design
 
 - Typeface: **Jost** (the author's typeface; a Futura revival, which ties the page to the Bauhaus-era manifesto tradition). Self-hosted as woff2 (regular, italic, bold) to avoid third-party font requests. System monospace for small labels (section numbers, metadata) as a nod to the text's code metaphors.
 - Palette: warm paper background, near-black ink, one red accent used sparingly (the "We say" label, section rules, the blinking caret). Dark scheme follows `prefers-color-scheme`.
-- Layout: a poster-like header (small monospace top bar with a byline linking to the author's X profile, the title "BOOTSTRAP" set edge to edge as an inline SVG wordmark, a rule, the subtitle), with the opening "They say / We say" pair anchored at the bottom of the first screen as the lede. Below it, a single centered column with a short measure (36rem) so the author's short lines stay short. Sections are numbered 01–10; on wide screens the numbers hang in the left margin. The closing "BOOTSTRAP." is an SVG that fills the column width, followed by a red block cursor, bookending the title.
+- Layout: a poster-like header (small monospace top bar with a byline linking to the author's X profile, the title "BOOTSTRAP" set edge to edge as an inline SVG wordmark, a rule, the subtitle), with the opening "They say / We say" pair anchored at the bottom of the first screen as the lede. Below it, a single centered column with a short measure (36rem) so the author's short lines stay short. Sections are numbered 01–11; on wide screens the numbers hang in the left margin. The closing "BOOTSTRAP." is an SVG that fills the column width, followed by a red block cursor, bookending the title.
 - Motion: a blinking caret (top bar and after the final "BOOTSTRAP.") and a short fade-up of the header on load. Both disabled under `prefers-reduced-motion`.
 - Print stylesheet: black on white, no caret, no decoration.
 
@@ -27,7 +28,7 @@ Publish the manifesto "BOOTSTRAP — Manifest für den freien Menschen" (written
 Static files only, no build step, no JavaScript required for reading (the only script is the cookieless Vercel Web Analytics snippet, added 2026-10-11):
 
 ```
-index.html            the page (semantic: header / main > article > section × 10)
+index.html            the page (semantic: header / main > article > section × 11)
 styles.css            all styles, design tokens on :root
 fonts/*.woff2         Jost regular / italic / bold (+ OFL license)
 favicon.svg           Jost Bold "B" on a red square
